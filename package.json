@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "author": "hzg20 <1960941659@qq.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.5.2",
+    "@ant-design/pro-components": "^2.8.2",
+    "antd": "^5.22.3",
+    "axios": "^1.7.8",
+    "pathe": "^1.1.2",
+    "umi": "^4.3.35"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.3"
+  }
+}
