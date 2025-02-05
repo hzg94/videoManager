@@ -1,15 +1,19 @@
 import React from "react";
 import {Image} from 'antd';
 import {FileApiUrl} from "@/api/FileApi";
+import {history} from "umi";
 
 interface VideoCardProps{
     title?: string
-    pic?: string
+    pic?: string,
+    id? :string
 }
 
 export default (props: VideoCardProps) => {
     return (
-        <div style={{display: 'block'}}>
+        <div style={{display: 'block'}} onClick={() => {
+            history.push(`/video/info/${props.id}`)
+        }}>
             <Image
                 width={180}
                 style={{

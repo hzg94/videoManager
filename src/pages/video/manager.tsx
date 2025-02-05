@@ -30,7 +30,7 @@ export default () => {
             <Space size={[8, 16]} wrap>
                 {
                     videoData.map(item => (
-                        <Card key={item.id} title={item.title} pic={item.posterPicPath}/>
+                        <Card key={item.id} title={item.title} pic={item.posterPicPath} id={item.id}/>
                     ))
                 }
             </Space>
