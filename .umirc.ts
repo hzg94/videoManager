@@ -11,17 +11,22 @@ export default defineConfig({
             routes: [
                 {
                     path: 'index',
-                    component: 'file/videoManager'
+                    component: 'video/manager'
                 },
                 {
-                    path: 'import',
-                    component: 'file/import'
+                  path: 'info/:id',
+                  component: 'video/info'
                 },
-                {
-                    path: 'file',
-                    component: 'file/fileManager'
-                }
+                // disable
+                // {
+                //     path: 'import',
+                //     component: 'file/import'
+                // },
             ]
+        },
+        {
+            path: 'file',
+            component: 'file/fileManager'
         },
         {
             path: '/subscribe',

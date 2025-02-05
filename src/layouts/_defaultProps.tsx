@@ -19,13 +19,13 @@ export default {
                         path: 'index',
                         name: '视频管理(Beta)',
                         icon: <DesktopOutlined />,
-                    },
-                    {
-                        path: 'file',
-                        name: '文件管理(Beta)',
-                        icon: <PieChartOutlined />,
-                    },
+                    }
                 ],
+            },
+            {
+                path: 'file',
+                name: '文件管理(Beta)',
+                icon: <PieChartOutlined />,
             },
             {
                 path: 'subscribe',
