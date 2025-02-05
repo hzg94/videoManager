@@ -1,6 +1,20 @@
 import React from "react";
 import {ProList} from "@ant-design/pro-components";
-import {PauseCircleOutlined} from "@ant-design/icons";
+import {DownOutlined, PauseCircleOutlined, SmileOutlined} from "@ant-design/icons";
+import {Dropdown, MenuProps, Space} from "antd";
+
+
+const items: MenuProps['items'] = [
+    {
+        key: '1',
+
+        label: (
+            <a>
+                启动
+            </a>
+        )
+    },
+];
 
 
 export default () => {
@@ -29,7 +43,16 @@ export default () => {
                 actions: {
                     cardActionProps: 'extra',
                     render: () => {
-                        return [<a key="run">启用</a>, <a key="delete">移除</a>]
+                        return [
+                            <Dropdown menu={{ items }}>
+                                <a onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                        更多
+                                        <DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        ]
                     }
                 },
             }}

@@ -1,5 +1,5 @@
 import {LoginOutlined, MoonOutlined, SunOutlined,} from '@ant-design/icons';
-import {PageContainer, ProLayout} from '@ant-design/pro-components';
+import {ProLayout} from '@ant-design/pro-components';
 import {ProConfigProvider} from '@ant-design/pro-provider';
 import React, {useEffect, useState} from 'react';
 import defaultProps from './_defaultProps';
@@ -46,7 +46,8 @@ export default () => {
                         <Tooltip title="退出">
                             <LoginOutlined onClick={authModel.logout}/>
                         </Tooltip>,
-                        settingState.page.dark ? <SunOutlined onClick={SwitchDarkMode}/> : <MoonOutlined onClick={SwitchDarkMode}/>
+                        settingState.page.dark ? <SunOutlined onClick={SwitchDarkMode}/> :
+                            <MoonOutlined onClick={SwitchDarkMode}/>
                     ];
                 }}
                 menuItemRender={(item, dom) => (
@@ -61,9 +62,9 @@ export default () => {
                     </a>
                 )}
             >
-                <PageContainer>
-                    <Outlet/>
-                </PageContainer>
+
+                <Outlet/>
+
             </ProLayout>
         </ProConfigProvider>
     );

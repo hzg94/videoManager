@@ -3,8 +3,9 @@ import {FileType} from "@/common/type/file";
 import {BaseResponseType} from "@/common/type";
 
 
-const FileApiUrl = {
+export const FileApiUrl = {
     List: "/api/file/ls",
+    getPic: '/api/file/getPic'
 }
 
 

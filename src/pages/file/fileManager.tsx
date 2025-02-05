@@ -30,6 +30,10 @@ export default () => {
             <ProList<FileType>
                 rowKey="id"
                 headerTitle="文件列表"
+                pagination={{
+                    defaultPageSize: 10,
+                    showSizeChanger: false,
+                }}
                 actionRef={actionRef}
                 request={async () => {
                     const response = await getFileList(nowPath.current)
@@ -105,10 +109,10 @@ export default () => {
                         dataIndex: 'createTime',
                     },
                     actions: {
-                        render: () => {
+                        render: (_, value) => {
                             return [
-                                <a key="init">重命名</a>,
-                                <a key="init">删除</a>
+                                <a key="analysis">分析</a>,
+                                <a key="delete">删除</a>
                             ];
                         },
                     },

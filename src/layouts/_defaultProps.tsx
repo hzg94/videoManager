@@ -34,7 +34,7 @@ export default {
             },
             {
                 path: 'plugins',
-                name: '插件管理(Beta)',
+                name: '插件管理(Feature)',
                 icon: <InboxOutlined />,
             },
             {

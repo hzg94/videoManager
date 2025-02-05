@@ -14,6 +14,10 @@ export default defineConfig({
                     component: 'file/videoManager'
                 },
                 {
+                    path: 'import',
+                    component: 'file/import'
+                },
+                {
                     path: 'file',
                     component: 'file/fileManager'
                 }
